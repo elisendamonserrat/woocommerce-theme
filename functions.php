@@ -7,7 +7,7 @@ function load_stylesheets()
 
     wp_register_style('custom', get_template_directory_uri() . '/app.css', '', 1, 'all');
     wp_enqueue_style('custom');
-} 
+}
 add_action('wp_enqueue_scripts', 'load_stylesheets');
 
 function load_javascript()
@@ -16,4 +16,3 @@ function load_javascript()
     wp_enqueue_script('custom');
 }
 add_action('wp_enqueue_scripts', 'load_javascript');
-
