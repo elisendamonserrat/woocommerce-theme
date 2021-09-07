@@ -13,7 +13,11 @@
 
 
 <header>
-    <div class="container"></div>
+    <div class="container split-x">
+        <img src="<?php bloginfo('template_directory');?>/images/logo.jpg" class="logo" >
+        <?php get_search_form(); ?>
+
+    </div> 
 
 </header>   
  
