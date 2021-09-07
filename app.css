@@ -474,3 +474,15 @@ header .top-menu {
     display: flex;
   }
 }
+
+.hero {
+  height: 550px;
+  width: 100%;
+  background: url("images/hero-image.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__title {
+  color: #ffff;
+}
