@@ -17,8 +17,9 @@ function load_javascript()
 }
 add_action('wp_enqueue_scripts', 'load_javascript');
 
-// Add menus
+// Add support
 add_theme_support('menus');
+add_theme_support('post-thumbnails');
 
 // Register menus
 register_nav_menus(
@@ -26,3 +27,6 @@ register_nav_menus(
         'top-menu' => __('Top Menu', 'theme')
     )
 );
+
+// Add images sizes
+add_image_size('post_image', 200, 150, false);
