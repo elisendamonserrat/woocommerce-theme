@@ -12,7 +12,9 @@
 <body <?php body_class();?>>
     <header>
         <div class="container split-x">
-            <img src="<?php bloginfo('template_directory');?>/images/logo.jpg" class="logo" >
+            <a href="<?php bloginfo('url');?>">
+                <img src="<?php bloginfo('template_directory');?>/images/logo.jpg" class="logo" >
+            </a>
             <?php get_search_form();?>
 
             <?php
