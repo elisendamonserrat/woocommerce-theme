@@ -1,4 +1,7 @@
-<?php wp_footer();?>
+        <footer>
+            <h1>Footer Links go here</h1>
+        </footer>
 
-</body>
+    <?php wp_footer();?>
+    </body>
 </html>

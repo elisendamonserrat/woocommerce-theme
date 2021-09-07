@@ -10,24 +10,21 @@
 
 </head>
 <body <?php body_class();?>>
+    <header>
+        <div class="container split-x">
+            <img src="<?php bloginfo('template_directory');?>/images/logo.jpg" class="logo" >
+            <?php get_search_form();?>
 
+            <?php
+                wp_nav_menu(
 
-<header>
-    <div class="container split-x">
-        <img src="<?php bloginfo('template_directory');?>/images/logo.jpg" class="logo" >
-        <?php get_search_form();?>
+                    array(
+                        'theme_location' => 'top-menu',
+                        'menu_class' => 'top-menu split-x'
+                    )
 
-        <?php
-        wp_nav_menu(
-
-            array(
-                'theme_location' => 'top-menu',
-                'menu_class' => 'top-menu split-x'
-            )
-
-        );?>
-
-    </div> 
-
-</header>   
- 
+                )
+            ;?>
+        </div> 
+    </header>   
+    
