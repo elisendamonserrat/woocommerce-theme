@@ -1,7 +1,13 @@
 /* A elements that don't have a class get default styles */
 a:not([class]) {
     text-decoration-skip-ink: auto;
-  }
+}
+
+a:-webkit-any-link {
+  color: initial;
+  cursor: pointer;
+  text-decoration: none;
+}
   
 /* Make images easier to work with */
 img,
@@ -32,7 +38,6 @@ select {
 
 :root {
     box-sizing: content-box;
-    width: 100%;
 }
 
 body {

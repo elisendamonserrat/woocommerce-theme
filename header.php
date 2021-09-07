@@ -15,7 +15,18 @@
 <header>
     <div class="container split-x">
         <img src="<?php bloginfo('template_directory');?>/images/logo.jpg" class="logo" >
-        <?php get_search_form(); ?>
+        <?php get_search_form();?>
+
+        <?php
+        wp_nav_menu(
+
+            array(
+                'theme_location' => 'top-menu',
+                'menu_class' => 'split-x'
+
+            )
+
+        );?>
 
     </div> 
 

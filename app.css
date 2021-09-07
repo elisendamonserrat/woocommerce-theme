@@ -398,6 +398,12 @@ a:not([class]) {
           text-decoration-skip-ink: auto;
 }
 
+a:-webkit-any-link {
+  color: initial;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 /* Make images easier to work with */
 img,
 picture {
@@ -428,7 +434,6 @@ select {
 }
 :root {
   box-sizing: content-box;
-  width: 100%;
 }
 
 body {
@@ -457,4 +462,7 @@ header {
 }
 header .logo {
   width: 2rem;
+}
+header .container {
+  justify-content: space-between;
 }
