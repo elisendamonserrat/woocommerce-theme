@@ -22,8 +22,7 @@
 
             array(
                 'theme_location' => 'top-menu',
-                'menu_class' => 'split-x'
-
+                'menu_class' => 'top-menu split-x'
             )
 
         );?>
