@@ -13,20 +13,19 @@
     <header>
         <div class="container split-x">
             <a href="<?php bloginfo('url');?>">
-                <img src="<?php bloginfo('template_directory');?>/images/logo.jpg" class="logo" >
+                <img src="<?php bloginfo('template_directory');?>/images/logo.jpg" class="header__logo" >
             </a>
             <?php get_search_form();?>
-
-            <?php
-                wp_nav_menu(
-
-                    array(
-                        'theme_location' => 'top-menu',
-                        'menu_class' => 'top-menu split-x'
+            <nav>
+                <?php
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'top-menu',
+                            'menu_class' => 'top-menu split-x'
+                        )
                     )
-
-                )
-            ;?>
+                ;?>
+            </nav>
         </div> 
     </header>   
     

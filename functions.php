@@ -30,3 +30,11 @@ register_nav_menus(
 
 // Add images sizes
 add_image_size('post_image', 960, 461, true);
+
+// Add Google Fonts
+function google_fonts() {
+    wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Source+Sans+Pro:wght@300;400&display=swap', false );
+}
+add_action( 'wp_enqueue_scripts', 'google_fonts' );
+
+?>
