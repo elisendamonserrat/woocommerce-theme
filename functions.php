@@ -29,4 +29,4 @@ register_nav_menus(
 );
 
 // Add images sizes
-add_image_size('post_image', 200, 150, false);
+add_image_size('post_image', 960, 461, true);
