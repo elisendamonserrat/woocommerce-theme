@@ -2,7 +2,7 @@
 
 <main>
     <section class="hero">
-        <h1 class="hero__title">Tejidos Europa</h1>
+        <?php echo do_shortcode('[smartslider3 slider="3"]'); ?> 
     </section>
     <section class="content container">
         <?php if(have_posts()) : while(have_posts()) : the_post();?>

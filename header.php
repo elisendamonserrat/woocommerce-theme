@@ -12,8 +12,9 @@
 <body <?php body_class();?>>
     <header>
         <div class="container split-x">
-            <a href="<?php bloginfo('url');?>">
-                <img src="<?php bloginfo('template_directory');?>/images/logo.jpg" class="header__logo" >
+            <a class="header__logo" href="<?php bloginfo('url');?>">
+                <img src="<?php bloginfo('template_directory');?>/images/logo.jpg" class="header__logo__img" >
+                <p>Tejidos Europa</p>
             </a>
             <?php get_search_form();?>
             <nav>
