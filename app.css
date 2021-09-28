@@ -399,7 +399,6 @@ a:not([class]) {
 }
 
 a:-webkit-any-link {
-  color: initial;
   cursor: pointer;
   text-decoration: none;
 }
