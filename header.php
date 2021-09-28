@@ -13,10 +13,9 @@
     <header>
         <div class="container split-x">
             <a class="header__logo" href="<?php bloginfo('url');?>">
-                <img src="<?php bloginfo('template_directory');?>/images/logo.jpg" class="header__logo__img" >
-                <p>Tejidos Europa</p>
+                <img src="<?php bloginfo('template_directory');?>/images/logo-removebg.png" class="header__logo__img">
+                <p class="header__logo__text">Tejidos Europa</p>
             </a>
-            <?php get_search_form();?>
             <nav>
                 <?php
                     wp_nav_menu(
