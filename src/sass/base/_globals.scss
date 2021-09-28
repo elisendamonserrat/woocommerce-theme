@@ -46,8 +46,9 @@ body {
 }
 
 .container {
-    width: min(90%, 60rem);
-    margin: 0 auto;
+  width: 95%;;
+  max-width: 980px;
+  margin: 0 auto;
 }
 
 .content {

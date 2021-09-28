@@ -442,7 +442,8 @@ body {
 }
 
 .container {
-  width: min(90%, 60rem);
+  width: 95%;
+  max-width: 980px;
   margin: 0 auto;
 }
 
@@ -478,7 +479,7 @@ p {
 
 h1, h2, h3, h4, h5 {
   margin: 3rem 0 1.38rem;
-  font-family: "Crimson Text", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 1.3;
 }
@@ -503,7 +504,7 @@ p {
 
 h1, h2, h3, h4, h5 {
   margin: 3rem 0 1.38rem;
-  font-family: "Crimson Text", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 1.3;
 }
@@ -560,9 +561,9 @@ small, .text_small {
   }
 }
 header {
-  background: #ffff;
+  background: #1b1464;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 header .container {
   justify-content: space-between;
@@ -573,18 +574,22 @@ header .header__logo {
   align-items: center;
 }
 header .header__logo__img {
-  width: 2.5rem;
+  width: 4em;
 }
-header .header__logo p {
-  margin-bottom: 0;
-  margin-left: 0.5em;
-  font-family: "Crimson Text", serif;
-  font-weight: 400;
-  line-height: 1.3;
-  font-size: 1.424rem;
+header .header__logo__text {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #ffff;
+  margin: 0;
 }
 header .top-menu {
   display: none;
+}
+header .top-menu a {
+  color: #ffff;
+}
+header .top-menu a:hover {
+  text-decoration: underline;
 }
 @media (min-width: 768px) {
   header .top-menu {
@@ -604,8 +609,7 @@ header .top-menu {
 
 footer {
   padding: 2rem;
-  width: 100%;
-  background: wheat;
+  background: #1b1464;
   position: relative;
   bottom: 0;
   left: 0;
