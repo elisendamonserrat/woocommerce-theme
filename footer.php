@@ -1,5 +1,7 @@
         <footer>
-            <h1>Footer Links go here</h1>
+            <div class="container">
+                <p>Footer Links go here</p>
+            </div>
         </footer>
 
     <?php wp_footer();?>
