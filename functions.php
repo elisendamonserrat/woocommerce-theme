@@ -24,7 +24,9 @@ add_theme_support('post-thumbnails');
 // Register menus
 register_nav_menus(
     array(
-        'top-menu' => __('Top Menu', 'theme')
+        'top-menu' => __('Top Menu', 'theme'),
+        'footer-center' => __('Footer Center', 'theme'),
+        'footer-legal' => __('Footer Legal', 'theme')
     )
 );
 

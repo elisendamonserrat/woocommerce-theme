@@ -17,14 +17,6 @@
                 <p class="header__logo__text">Tejidos Europa</p>
             </a>
             <nav>
-                <?php
-                    wp_nav_menu(
-                        array(
-                            'theme_location' => 'top-menu',
-                            'menu_class' => 'top-menu split-x'
-                        )
-                    )
-                ;?>
             </nav>
         </div> 
     </header>   

@@ -62,7 +62,16 @@ body {
     align-items: center;
 
     & > * + * {
-        margin:  0 1rem 0 1rem;
+      margin: 0 1rem;
     }
+}
+
+.split-y {
+  display: flex;
+  flex-direction: column;
+
+  & > * + * {
+      margin: .25rem 0;
+  }
 }
 
