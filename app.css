@@ -666,6 +666,34 @@ header .top-menu a:hover {
   color: #1b1464;
 }
 
+@media (min-width: 768px) {
+  .category__div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 3rem;
+  }
+  .category__div__img {
+    width: 50%;
+    height: 100%;
+  }
+  .category__div__text {
+    width: 45%;
+  }
+  .category__div__text h2 {
+    margin: 0 0 0.5rem 0;
+  }
+
+  .category__div__img--left {
+    order: 2;
+  }
+
+  .category__div__img--text {
+    order: 1;
+  }
+}
 .title__frontpage {
   text-align: center;
 }
