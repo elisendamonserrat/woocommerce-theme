@@ -447,7 +447,7 @@ body {
 }
 
 .content {
-  margin: 5rem auto;
+  margin: 3rem auto;
 }
 
 .split-x {
@@ -507,6 +507,7 @@ body {
 
 h1, h2, h3, h4, h5 {
   margin: 3rem 0 1.38rem;
+  color: #1b1464;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 1.3;
@@ -563,6 +564,16 @@ small, .text_small {
     font-size: 0.8rem;
   }
 }
+a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  a {
+    font-size: 16px;
+  }
+}
 header {
   background: #1b1464;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
@@ -598,6 +609,65 @@ header .top-menu a:hover {
   header .top-menu {
     display: flex;
   }
+}
+
+.category__div {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  height: 450px;
+}
+.category__div__img {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+.category__div__img:hover {
+  opacity: 0.8;
+}
+.category__div__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.category__div__img--link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #00000080;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.category__div__img--link:hover {
+  opacity: 0.8;
+}
+.category__div__img--link a {
+  position: absolute;
+  color: #ffff;
+  border: 2px solid #ffff;
+  border-radius: 30px;
+  padding: 15px 30px 15px 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.category__div__img--link a:hover {
+  background-color: #ffff;
+  color: black;
+}
+.category__div__text h2 {
+  margin: 1.5rem 0 1rem 0;
+  color: #1b1464;
+}
+
+.title__frontpage {
+  text-align: center;
 }
 
 .post-image {
