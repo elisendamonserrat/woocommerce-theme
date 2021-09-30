@@ -15,12 +15,18 @@ footer {
     justify-content: space-between;
     align-items: center;
 
-    &__title {
+    &__title, 
+    &__title--mt {
         font-family: 'Montserrat', sans-serif;
         font-size: 18px;
         font-weight: bold;
         color: inherit;
         text-align: center;
+    }
+
+
+    &__title--mt {
+        margin: .5rem 0;
     }
 
     &__col {
@@ -29,15 +35,15 @@ footer {
       flex-direction: column;
       align-items: center;
       width: 100%;
-
-      .footer__logo {
+      
+      .footer__logo,
+      .footer__payment-img {
         width: 15rem;
       }
     }
 
     p {
        color:$light;
-       margin: 0;
     }
 
     a {
@@ -53,17 +59,28 @@ footer {
         flex-direction: row;
         align-items: flex-start;
 
+        &__col {
+            align-items: flex-start;
+            width: 35%;
+    
+            .footer__logo {
+              margin-top: .5rem;
+              width: 85%;
+            }
+    
+            .footer__payment-img {
+                width: 80%;
+            }
+          }
+
       &__title {
         text-align: left;
+        margin-bottom: .5rem;
       }
 
-      &__col {
-        align-items: flex-start;
-        width: 25%;
-
-        .footer__logo {
-          width: 90%;
-        }
+      &__title--mt {
+        text-align: left;
+        margin: .5rem 0;
       }
     }
 }
