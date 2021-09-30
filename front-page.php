@@ -5,7 +5,7 @@
     <?php echo do_shortcode('[smartslider3 slider="4"]'); ?> 
   </section> <!--Slider-->
   <section class="content container">
-    <h1 class="title__frontpage">Venta de tejidos y telas online</h1>
+    <h1>Venta de tejidos y telas online</h1>
     <div class="categories-list">
       <div class="category__div"> 
         <div class="category__div__img">

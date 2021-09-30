@@ -504,6 +504,8 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   margin-top: 0;
+  text-align: center;
+  margin-bottom: 2rem;
   font-size: 1.802rem;
   font-weight: 600;
 }
@@ -561,7 +563,7 @@ p {
 @media (min-width: 768px) {
   a,
 p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 header {
@@ -684,11 +686,6 @@ header .top-menu a:hover {
     order: 1;
   }
 }
-.title__frontpage {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
 .post-image {
   width: 100%;
 }
